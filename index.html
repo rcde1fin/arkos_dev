@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: Change text (page title & meta description) -->
+  <title>Arkos — Prime Build Co. | Design &amp; Construction</title>
+  <meta name="description" content="Arkos, Prime Build Co. — architectural design and construction for residential, commercial, interior and renovation projects.">
+  <meta name="theme-color" content="#1E2226">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;600;700;800;900&display=swap">
+  <!-- TODO: Change image (hero preload — keep in sync with the hero <img>) -->
+  <link rel="preload" as="image" href="assets/img/hero-960.webp" imagesrcset="assets/img/hero-480.webp 480w, assets/img/hero-960.webp 960w, assets/img/hero-1600.webp 1600w" imagesizes="(max-width: 900px) 92vw, 44vw">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="intro" aria-hidden="true">
+    <svg class="intro-mark" viewBox="0 0 48 48" width="72" height="72"><path d="M6 42 24 6l18 36" /><path d="M13 30h22" /><path d="M20 42v-6h8v6" /></svg>
+  </div>
+
+  <header class="site-header" data-testid="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand" aria-label="Arkos, Prime Build Co. — back to top" data-testid="brand-logo">
+        <svg class="brand-mark" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true" focusable="false"><path d="M6 42 24 6l18 36" /><path d="M13 30h22" /><path d="M20 42v-6h8v6" /></svg>
+        <span class="brand-text">
+          <!-- TODO: Change text (company name & tagline) -->
+          <span class="brand-name">ARKOS</span>
+          <span class="brand-tag">Prime Build Co.</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about" data-testid="nav-about">About</a></li>
+          <li><a href="#services" data-testid="nav-services">Services</a></li>
+          <li><a href="#portfolio" data-testid="nav-portfolio">Portfolio</a></li>
+          <li><a href="#process" data-testid="nav-process">Process</a></li>
+          <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="currency-wrap">
+          <label class="sr-only" for="currency-select">Currency</label>
+          <select id="currency-select" class="currency-select" data-testid="currency-selector" aria-describedby="rates-note">
+            <!-- TODO: Change text (available currencies — exchange rates live in app.js) -->
+            <option value="PHP" selected>PHP ₱</option>
+            <option value="USD">USD $</option>
+            <option value="EUR">EUR €</option>
+            <option value="GBP">GBP £</option>
+            <option value="AED">AED</option>
+            <option value="INR">INR ₹</option>
+          </select>
+          <p class="rates-note" id="rates-note" data-testid="rates-updated" hidden></p>
+        </div>
+        <a href="#contact" class="btn btn-gold btn-sm header-cta" data-testid="header-cta">Start a project</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-testid="mobile-menu-toggle">
+          <span class="sr-only">Open menu</span>
+          <span class="menu-bar" aria-hidden="true"></span>
+          <span class="menu-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title" data-testid="hero-section">
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <p class="hero-ghost" aria-hidden="true">ARKOS</p>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <!-- TODO: Change text (hero eyebrow) -->
+          <p class="eyebrow hero-fade" style="--d:.9s">Design &amp; Construction — Est. 2008</p>
+          <h1 id="hero-title" class="hero-title">
+            <!-- TODO: Change text (hero headline — one phrase per line) -->
+            <span class="line"><span class="line-inner" style="--d:.95s">We build</span></span>
+            <span class="line"><span class="line-inner" style="--d:1.07s">what others</span></span>
+            <span class="line"><span class="line-inner" style="--d:1.19s">only <span class="gold">sketch.</span></span></span>
+          </h1>
+          <!-- TODO: Change text (hero supporting paragraph) -->
+          <p class="hero-lead hero-fade" style="--d:1.4s">Arkos turns ambitious drawings into precise, enduring buildings — one accountable team from first sketch to final handover.</p>
+          <div class="hero-ctas hero-fade" style="--d:1.55s">
+            <!-- TODO: Change text (primary call-to-action) -->
+            <a href="#contact" class="btn btn-gold btn-lg btn-cta" data-testid="hero-cta-button">
+              Get a free consultation
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#portfolio" class="btn btn-ghost btn-lg" data-testid="hero-portfolio-link">View our work</a>
+          </div>
+          <dl class="hero-stats hero-fade" style="--d:1.7s">
+            <!-- TODO: Change text (hero stats) -->
+            <div><dt>Projects delivered</dt><dd>240+</dd></div>
+            <div><dt>Years building</dt><dd>16</dd></div>
+            <div><dt>On-time handover</dt><dd>98%</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" data-tilt>
+          <figure class="hero-frame">
+            <!-- TODO: Change image (hero image) -->
+            <img src="assets/img/hero-960.webp"
+                 srcset="assets/img/hero-480.webp 480w, assets/img/hero-960.webp 960w, assets/img/hero-1600.webp 1600w"
+                 sizes="(max-width: 900px) 92vw, 44vw"
+                 width="1600" height="1882" alt="Cantilevered concrete residence on slender columns above a rocky green landscape"
+                 fetchpriority="high" decoding="async" data-parallax="0.08">
+            <figcaption class="hero-caption">
+              <!-- TODO: Change text (hero image caption) -->
+              <span class="caption-num">No. 042</span>
+              <span>Cliffside Residence — [Project location]</span>
+            </figcaption>
+          </figure>
+          <div class="hero-badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#circ">PRIME BUILD CO. • EST. 2008 • </textPath></text></svg>
+            <span class="badge-core">A</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" data-testid="hero-scroll-cue"><span class="sr-only">Scroll to About section</span><span aria-hidden="true">Scroll</span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <!-- TODO: Change text (marquee keywords — keep both groups identical) -->
+        <span>Architectural Design</span><i>◆</i><span>Commercial Builds</span><i>◆</i><span>Interior Masterwork</span><i>◆</i><span>Renovation &amp; Retrofit</span><i>◆</i>
+        <span>Architectural Design</span><i>◆</i><span>Commercial Builds</span><i>◆</i><span>Interior Masterwork</span><i>◆</i><span>Renovation &amp; Retrofit</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title" data-testid="about-section">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="eyebrow">01 — About Arkos</p>
+          <!-- TODO: Change text (about heading & paragraphs) -->
+          <h2 id="about-title" class="section-title">Precision is not a finish. It's the foundation.</h2>
+          <p>Founded by architects and builders who were tired of the handoff gap, Arkos brings design, engineering and construction under one roof. Every line we draw, we are accountable for building.</p>
+          <p>[Add a short paragraph about your company history, values, certifications or service area here.]</p>
+          <dl class="counters">
+            <!-- TODO: Change text (counter values — edit data-count) -->
+            <div class="counter"><dt>Projects completed</dt><dd><span data-count="240">240</span>+</dd></div>
+            <div class="counter"><dt>Sq ft built</dt><dd><span data-count="3.2" data-decimals="1">3.2</span>M</dd></div>
+            <div class="counter"><dt>Design awards</dt><dd><span data-count="27">27</span></dd></div>
+          </dl>
+        </div>
+        <figure class="about-media reveal" style="--d:.15s">
+          <div class="clip-frame">
+            <!-- TODO: Change image (about image) -->
+            <img src="assets/img/about-960.webp"
+                 srcset="assets/img/about-480.webp 480w, assets/img/about-960.webp 960w, assets/img/about-1600.webp 1600w"
+                 sizes="(max-width: 900px) 92vw, 46vw"
+                 width="1600" height="1067" loading="lazy" decoding="async"
+                 alt="Arkos site team reviewing work beside a concrete mixer and excavator" data-parallax="0.06">
+          </div>
+          <figcaption><span class="gold">●</span> On site — [Project name], [City]</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title" data-testid="services-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 — Services</p>
+          <!-- TODO: Change text (services heading) -->
+          <h2 id="services-title" class="section-title">One team. Every phase.</h2>
+          <p class="section-sub">Prices shown in <strong class="currency-code" data-testid="services-currency-code">PHP</strong>. Change currency from the menu at the top.</p>
+        </div>
+
+        <div class="bento">
+          <article class="bento-card bento-a reveal" data-testid="service-card-design">
+            <!-- TODO: Change image (architectural design service background) -->
+            <img class="bento-bg" src="assets/img/res2-960.webp"
+                 srcset="assets/img/res2-480.webp 480w, assets/img/res2-960.webp 960w, assets/img/res2-1600.webp 1600w"
+                 sizes="(max-width: 900px) 92vw, 62vw" width="1600" height="1132" loading="lazy" decoding="async" alt="">
+            <div class="bento-body">
+              <span class="bento-num">S/01</span>
+              <!-- TODO: Change text (service 1) -->
+              <h3>Architectural Design</h3>
+              <p>Concept, planning and full construction drawings shaped around how you live and work.</p>
+              <!-- TODO: Price selector (service 1 starting price in USD per sq ft — edit data-price) -->
+              <p class="price">From <strong data-price="45">$45</strong> / sq ft</p>
+            </div>
+          </article>
+          <article class="bento-card bento-b reveal" style="--d:.08s" data-testid="service-card-commercial">
+            <span class="bento-num">S/02</span>
+            <svg class="bento-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01"/></svg>
+            <!-- TODO: Change text (service 2) -->
+            <h3>Commercial Construction</h3>
+            <p>Offices, retail and hospitality delivered on program, on budget.</p>
+            <!-- TODO: Price selector (service 2 starting price in USD per sq ft) -->
+            <p class="price">From <strong data-price="260">$260</strong> / sq ft</p>
+          </article>
+          <article class="bento-card bento-c reveal" data-testid="service-card-interior">
+            <span class="bento-num">S/03</span>
+            <svg class="bento-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 18v-5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v5M2 18h20M6 18v2M18 18v2M7 10V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/></svg>
+            <!-- TODO: Change text (service 3) -->
+            <h3>Interior Masterwork</h3>
+            <p>Joinery, finishes and lighting tuned to the millimetre.</p>
+            <!-- TODO: Price selector (service 3 starting price in USD per sq ft) -->
+            <p class="price">From <strong data-price="140">$140</strong> / sq ft</p>
+          </article>
+          <article class="bento-card bento-d reveal" style="--d:.08s" data-testid="service-card-renovation">
+            <!-- TODO: Change image (renovation service background) -->
+            <img class="bento-bg" src="assets/img/ren2-960.webp"
+                 srcset="assets/img/ren2-480.webp 480w, assets/img/ren2-960.webp 960w, assets/img/ren2-1600.webp 1600w"
+                 sizes="(max-width: 900px) 92vw, 62vw" width="1600" height="1067" loading="lazy" decoding="async" alt="">
+            <div class="bento-body">
+              <span class="bento-num">S/04</span>
+              <!-- TODO: Change text (service 4) -->
+              <h3>Renovation &amp; Retrofit</h3>
+              <p>Structural upgrades, extensions and energy retrofits that respect what's already there.</p>
+              <!-- TODO: Price selector (service 4 starting price in USD per sq ft) -->
+              <p class="price">From <strong data-price="120">$120</strong> / sq ft</p>
+            </div>
+          </article>
+
+          <form class="bento-card bento-e estimator reveal" aria-labelledby="est-title" data-testid="price-estimator" onsubmit="return false">
+            <div class="est-head">
+              <span class="bento-num">Estimator</span>
+              <!-- TODO: Change text (estimator heading) -->
+              <h3 id="est-title">Ballpark your build</h3>
+              <p>Indicative only — every Arkos quote is itemised after a site visit.</p>
+            </div>
+            <div class="est-fields">
+              <div class="field">
+                <label for="est-type">Project type</label>
+                <!-- TODO: Price selector (estimator base rates in USD per sq ft — edit data-rate) -->
+                <select id="est-type" data-testid="estimator-type">
+                  <option value="residential" data-rate="220">Residential</option>
+                  <option value="commercial" data-rate="260">Commercial</option>
+                  <option value="interior" data-rate="140">Interior</option>
+                  <option value="renovation" data-rate="120">Renovation</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="est-area">Area: <output id="est-area-out" for="est-area">2,500</output> sq ft</label>
+                <!-- TODO: Price selector (estimator area minimum / maximum) -->
+                <input type="range" id="est-area" min="500" max="20000" step="250" value="2500" data-testid="estimator-area">
+              </div>
+              <fieldset class="field finish">
+                <legend>Finish level</legend>
+                <!-- TODO: Price selector (finish multipliers — edit value) -->
+                <label><input type="radio" name="finish" value="1" checked data-testid="estimator-finish-standard"> Standard</label>
+                <label><input type="radio" name="finish" value="1.35" data-testid="estimator-finish-premium"> Premium</label>
+                <label><input type="radio" name="finish" value="1.8" data-testid="estimator-finish-signature"> Signature</label>
+              </fieldset>
+            </div>
+            <div class="est-result" aria-live="polite">
+              <span class="est-label">Estimated range</span>
+              <strong class="est-value" id="est-value" data-testid="estimator-result">—</strong>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title" data-testid="portfolio-section">
+      <div class="container">
+        <div class="section-head split reveal">
+          <div>
+            <p class="eyebrow">03 — Selected Work</p>
+            <!-- TODO: Change text (portfolio heading) -->
+            <h2 id="portfolio-title" class="section-title">Built, not imagined.</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn" aria-pressed="true" data-filter="all" data-testid="filter-all">All</button>
+            <button type="button" class="filter-btn" aria-pressed="false" data-filter="residential" data-testid="filter-residential">Residential</button>
+            <button type="button" class="filter-btn" aria-pressed="false" data-filter="commercial" data-testid="filter-commercial">Commercial</button>
+            <button type="button" class="filter-btn" aria-pressed="false" data-filter="interior" data-testid="filter-interior">Interior</button>
+            <button type="button" class="filter-btn" aria-pressed="false" data-filter="renovation" data-testid="filter-renovation">Renovation</button>
+          </div>
+        </div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+        <ul class="gallery" data-testid="portfolio-gallery">
+          <!-- Each project: edit data-* for the lightbox. -->
+          <li class="project tall" data-category="residential" data-title="Stillwater House" data-meta="Residential · [City] · 2024 · 6,400 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-1">
+              <!-- TODO: Change image (project 1) -->
+              <img src="assets/img/res1-480.webp" srcset="assets/img/res1-480.webp 480w, assets/img/res1-960.webp 960w, assets/img/res1-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="1280" loading="lazy" decoding="async" alt="Board-formed concrete house with broad stone steps and wild grasses">
+              <!-- TODO: Change text (project 1 title & category) -->
+              <span class="project-info"><span class="project-cat">Residential</span><span class="project-title">Stillwater House</span></span>
+            </button>
+          </li>
+          <li class="project" data-category="commercial" data-title="Meridian Office Block" data-meta="Commercial · [City] · 2023 · 48,000 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-2">
+              <!-- TODO: Change image (project 2) -->
+              <img src="assets/img/com2-480.webp" srcset="assets/img/com2-480.webp 480w, assets/img/com2-960.webp 960w, assets/img/com2-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="640" loading="lazy" decoding="async" alt="Glass and stone office tower rising against a pale blue sky">
+              <!-- TODO: Change text (project 2 title & category) -->
+              <span class="project-info"><span class="project-cat">Commercial</span><span class="project-title">Meridian Office Block</span></span>
+            </button>
+          </li>
+          <li class="project" data-category="interior" data-title="Grey Loft Living" data-meta="Interior · [City] · 2024 · 2,100 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-3">
+              <!-- TODO: Change image (project 3) -->
+              <img src="assets/img/int1-480.webp" srcset="assets/img/int1-480.webp 480w, assets/img/int1-960.webp 960w, assets/img/int1-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="600" loading="lazy" decoding="async" alt="Minimal grey living room with low sofa and floor-to-ceiling glazing">
+              <!-- TODO: Change text (project 3 title & category) -->
+              <span class="project-info"><span class="project-cat">Interior</span><span class="project-title">Grey Loft Living</span></span>
+            </button>
+          </li>
+          <li class="project tall" data-category="renovation" data-title="Harbor Frame Retrofit" data-meta="Renovation · [City] · 2025 · 32,000 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-4">
+              <!-- TODO: Change image (project 4) -->
+              <img src="assets/img/ren1-480.webp" srcset="assets/img/ren1-480.webp 480w, assets/img/ren1-960.webp 960w, assets/img/ren1-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="1440" loading="lazy" decoding="async" alt="Workers in hard hats on the exposed concrete frame of a building under renovation">
+              <!-- TODO: Change text (project 4 title & category) -->
+              <span class="project-info"><span class="project-cat">Renovation</span><span class="project-title">Harbor Frame Retrofit</span></span>
+            </button>
+          </li>
+          <li class="project" data-category="commercial" data-title="Atrium Exchange" data-meta="Commercial · [City] · 2022 · 85,000 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-5">
+              <!-- TODO: Change image (project 5) -->
+              <img src="assets/img/com3-480.webp" srcset="assets/img/com3-480.webp 480w, assets/img/com3-960.webp 960w, assets/img/com3-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="640" loading="lazy" decoding="async" alt="Curved blue glass curtain wall of a commercial building">
+              <!-- TODO: Change text (project 5 title & category) -->
+              <span class="project-info"><span class="project-cat">Commercial</span><span class="project-title">Atrium Exchange</span></span>
+            </button>
+          </li>
+          <li class="project tall" data-category="interior" data-title="The Arch Room" data-meta="Interior · [City] · 2023 · 1,450 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-6">
+              <!-- TODO: Change image (project 6) -->
+              <img src="assets/img/int2-480.webp" srcset="assets/img/int2-480.webp 480w, assets/img/int2-960.webp 960w, assets/img/int2-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="1440" loading="lazy" decoding="async" alt="Soft plaster archway framing a black leather sofa in a sunlit room">
+              <!-- TODO: Change text (project 6 title & category) -->
+              <span class="project-info"><span class="project-cat">Interior</span><span class="project-title">The Arch Room</span></span>
+            </button>
+          </li>
+          <li class="project" data-category="residential" data-title="Lantern Court" data-meta="Residential · [City] · 2025 · 4,800 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-7">
+              <!-- TODO: Change image (project 7) -->
+              <img src="assets/img/res2-480.webp" srcset="assets/img/res2-480.webp 480w, assets/img/res2-960.webp 960w, assets/img/res2-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="679" loading="lazy" decoding="async" alt="Modern house with concrete facade, timber accents and a black metal gate lit at dusk">
+              <!-- TODO: Change text (project 7 title & category) -->
+              <span class="project-info"><span class="project-cat">Residential</span><span class="project-title">Lantern Court</span></span>
+            </button>
+          </li>
+          <li class="project tall" data-category="commercial" data-title="Concrete Quarter" data-meta="Commercial · [City] · 2021 · 22,000 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-8">
+              <!-- TODO: Change image (project 8) -->
+              <img src="assets/img/com1-480.webp" srcset="assets/img/com1-480.webp 480w, assets/img/com1-960.webp 960w, assets/img/com1-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="1280" loading="lazy" decoding="async" alt="Raw concrete building with timber shutters against a clear sky">
+              <!-- TODO: Change text (project 8 title & category) -->
+              <span class="project-info"><span class="project-cat">Commercial</span><span class="project-title">Concrete Quarter</span></span>
+            </button>
+          </li>
+          <li class="project" data-category="interior" data-title="Atelier Lounge" data-meta="Interior · [City] · 2024 · 1,900 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-9">
+              <!-- TODO: Change image (project 9) -->
+              <img src="assets/img/int3-480.webp" srcset="assets/img/int3-480.webp 480w, assets/img/int3-960.webp 960w, assets/img/int3-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="720" loading="lazy" decoding="async" alt="Warm lounge with a camel leather sectional and panelled walls">
+              <!-- TODO: Change text (project 9 title & category) -->
+              <span class="project-info"><span class="project-cat">Interior</span><span class="project-title">Atelier Lounge</span></span>
+            </button>
+          </li>
+          <li class="project" data-category="renovation" data-title="Core &amp; Shell Upgrade" data-meta="Renovation · [City] · 2024 · 18,500 sq ft">
+            <button type="button" class="project-btn" data-testid="project-item-10">
+              <!-- TODO: Change image (project 10) -->
+              <img src="assets/img/ren2-480.webp" srcset="assets/img/ren2-480.webp 480w, assets/img/ren2-960.webp 960w, assets/img/ren2-1600.webp 1600w" sizes="(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 31vw" width="960" height="640" loading="lazy" decoding="async" alt="Engineers in high-visibility vests inspecting a gutted concrete interior">
+              <!-- TODO: Change text (project 10 title & category) -->
+              <span class="project-info"><span class="project-cat">Renovation</span><span class="project-title">Core &amp; Shell Upgrade</span></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process" id="process" aria-labelledby="process-title" data-testid="process-section">
+      <div class="container process-grid">
+        <div class="process-aside">
+          <div class="process-sticky reveal">
+            <p class="eyebrow">04 — Process</p>
+            <!-- TODO: Change text (process heading) -->
+            <h2 id="process-title" class="section-title">Five steps. Zero surprises.</h2>
+            <div class="clip-frame process-img">
+              <!-- TODO: Change image (process image) -->
+              <img src="assets/img/process-480.webp" srcset="assets/img/process-480.webp 480w, assets/img/process-960.webp 960w" sizes="(max-width: 900px) 92vw, 36vw" width="960" height="1440" loading="lazy" decoding="async" alt="Two workers tying a steel rebar mesh before a concrete pour">
+            </div>
+          </div>
+        </div>
+        <ol class="steps" data-testid="process-steps">
+          <!-- TODO: Change text (process steps) -->
+          <li class="step reveal"><span class="step-num">01</span><div><h3>Discovery &amp; Consultation</h3><p>We walk the site, listen to your brief and set a realistic budget and timeline together.</p></div></li>
+          <li class="step reveal"><span class="step-num">02</span><div><h3>Architectural Design</h3><p>Concepts evolve into detailed drawings, 3D models and a fixed scope you sign off on.</p></div></li>
+          <li class="step reveal"><span class="step-num">03</span><div><h3>Permits &amp; Engineering</h3><p>Our engineers and permitting team clear approvals while procurement locks in materials.</p></div></li>
+          <li class="step reveal"><span class="step-num">04</span><div><h3>Execution &amp; Craft</h3><p>One site lead, weekly reports and a live schedule — you always know where things stand.</p></div></li>
+          <li class="step reveal"><span class="step-num">05</span><div><h3>Master Handover</h3><p>Snag-free walkthrough, full documentation and a 10-year structural warranty.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title" data-testid="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">05 — Contact</p>
+          <!-- TODO: Change text (contact heading) -->
+          <h2 id="contact-title" class="section-title">Let's draw the first line.</h2>
+          <p>Tell us about your project. We reply within one business day.</p>
+          <ul class="contact-list">
+            <!-- TODO: Change text (contact details — placeholders) -->
+            <li><span class="contact-label">Phone</span><a href="tel:+10000000000" data-testid="contact-phone">[+1 (000) 000-0000]</a></li>
+            <li><span class="contact-label">Email</span><a href="mailto:hello@example.com" data-testid="contact-email">[hello@example.com]</a></li>
+            <li><span class="contact-label">Studio</span><address data-testid="contact-address">[Street Address], [City], [State] [ZIP]</address></li>
+            <li><span class="contact-label">Hours</span><span data-testid="contact-hours">[Mon–Fri, 8:00 – 18:00]</span></li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate data-testid="contact-form" style="--d:.1s">
+          <div class="form-row">
+            <div class="field">
+              <div class="form-floating">
+                <input id="cf-name" name="name" type="text" class="form-control" placeholder=" " autocomplete="name" required aria-describedby="cf-name-err" data-testid="contact-name-input">
+                <label for="cf-name">Full name <span aria-hidden="true">*</span></label>
+              </div>
+              <p class="field-error" id="cf-name-err"></p>
+            </div>
+            <div class="field">
+              <div class="form-floating">
+                <input id="cf-email" name="email" type="email" class="form-control" placeholder=" " autocomplete="email" required aria-describedby="cf-email-err" data-testid="contact-email-input">
+                <label for="cf-email">Email <span aria-hidden="true">*</span></label>
+              </div>
+              <p class="field-error" id="cf-email-err"></p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <div class="form-floating">
+                <input id="cf-phone" name="phone" type="tel" class="form-control" placeholder=" " autocomplete="tel" data-testid="contact-phone-input">
+                <label for="cf-phone">Phone</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="form-floating">
+                <select id="cf-type" name="type" class="form-select" data-testid="contact-type-select">
+                  <option>Residential</option><option>Commercial</option><option>Interior</option><option>Renovation</option>
+                </select>
+                <label for="cf-type">Project type</label>
+              </div>
+            </div>
+          </div>
+          <fieldset class="field budget">
+            <legend>Budget range: <output id="budget-out" data-testid="budget-output">—</output></legend>
+            <div class="dual-range">
+              <span class="dual-track" aria-hidden="true"><span class="dual-fill"></span></span>
+              <!-- TODO: Price selector (budget minimum slider — min/max/step/value in USD) -->
+              <label class="sr-only" for="budget-min">Minimum budget</label>
+              <input type="range" id="budget-min" min="10000" max="2000000" step="10000" value="150000" data-testid="budget-min-slider">
+              <!-- TODO: Price selector (budget maximum slider — min/max/step/value in USD) -->
+              <label class="sr-only" for="budget-max">Maximum budget</label>
+              <input type="range" id="budget-max" min="10000" max="2000000" step="10000" value="600000" data-testid="budget-max-slider">
+            </div>
+          </fieldset>
+          <div class="field">
+            <div class="form-floating">
+              <textarea id="cf-msg" name="message" rows="4" class="form-control" placeholder=" " required aria-describedby="cf-msg-err" data-testid="contact-message-input"></textarea>
+              <label for="cf-msg">Project details <span aria-hidden="true">*</span></label>
+            </div>
+            <p class="field-error" id="cf-msg-err"></p>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg" data-testid="contact-submit-button">Send via email
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-note" id="form-status" role="status" data-testid="contact-form-status">Submitting opens your email app with this message pre-filled.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-testid="site-footer">
+    <div class="container">
+      <p class="footer-word" aria-hidden="true">ARKOS</p>
+      <div class="footer-row">
+        <!-- TODO: Change text (footer tagline, socials & copyright) -->
+        <p>Arkos — Prime Build Co. · Design &amp; Construction</p>
+        <ul class="socials">
+          <li><a href="#" data-testid="footer-instagram">Instagram</a></li>
+          <li><a href="#" data-testid="footer-linkedin">LinkedIn</a></li>
+          <li><a href="#" data-testid="footer-houzz">Houzz</a></li>
+        </ul>
+        <p>© 2026 Arkos. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title" data-testid="portfolio-lightbox">
+    <div class="lb-inner">
+      <img id="lb-img" src="" alt="" width="1600" height="1067">
+      <div class="lb-meta">
+        <p class="lb-cat" id="lb-meta"></p>
+        <h2 id="lb-title"></h2>
+        <div class="lb-nav">
+          <button type="button" class="lb-btn" id="lb-prev" data-testid="lightbox-prev"><span aria-hidden="true">←</span> Previous</button>
+          <button type="button" class="lb-btn" id="lb-next" data-testid="lightbox-next">Next <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+      <button type="button" class="lb-close" id="lb-close" data-testid="lightbox-close"><span class="sr-only">Close project</span><span aria-hidden="true">×</span></button>
+    </div>
+  </dialog>
+
+  <script src="vendor/lenis.min.js" defer></script>
+  <script src="vendor/jquery.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
